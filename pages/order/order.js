@@ -6,7 +6,7 @@ Page({
    */
   data: {
     currtab: 0,
-    swipertab: [{ name: '已完成', index: 0 }, { name: '待付款', index: 1 }, { name: '已取消', index: 2 }],
+    swipertab: [{ name: '悬赏记录', index: 0 }, { name: '悬赏中', index: 1 }, { name: '悬赏', index: 2 }],
   },
 
   /**
