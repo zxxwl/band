@@ -1,37 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/order/order",
-    "pages/reward/reward"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "软衣房官方商城",
+    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/index_icon.png",
-        "selectedIconPath": "images/index_icon_HL.png"
-      },
-      {
-        "pagePath": "pages/order/order",
-        "text": "订单",
-        "iconPath": "images/user_icon.png",
-        "selectedIconPath": "images/user_icon_HL.png"
-      },
-      {
-        "pagePath": "pages/reward/reward",
-        "text": "我的悬赏",
-        "iconPath": "images/user_icon.png",
-        "selectedIconPath": "images/user_icon_HL.png"
-      }
-    ]
-  },
+  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

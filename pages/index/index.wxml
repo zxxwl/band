@@ -1,6 +1,4 @@
 <!--index.wxml-->
-<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" markers="{{markers}}"       polyline="{{polyline}}" circles="{{circles}}" style='width:100%;height:200px;'>
-</map>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -8,37 +6,8 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-    <text class='userinfo.city'>目前所在地:{{userInfo.city}}{{userInfo.district}}</text>
   </view>
-  <!-- <view class="usermotto">
+  <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view> -->
-</view>
-<!-- <navigator wx:for='{{userList}}' wx:key='{{index}}'> -->
-  <view class="user">
-    <text>{{userList}}</text>
   </view>
-<!-- </navigator> -->
-<view class='container' class='zn-uploadimg'>
-<button type='primary' bindtap='modalinput'>发布悬赏</button>
-</view>
-<modal id="modal" hidden="{{hiddenmodalput}}" title="发布悬赏信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
-  <form bindsubmit="getxs" class="xsform">
-    姓名:<input type="text" bindinput="user" name="name" auto-focus />
-    电话:<input type="number" bindinput="tel" name="tel" auto-focus />
-    地址：<input type="text" bindinput="address" name="adddress" auto-focus />
-    拿货时间：<input type="text" bindinput="time" name="adddress" auto-focus />
-    取件码：<input type="text" bindinput="code" name="adddress" auto-focus />
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
-      快递类型:{{array[index]}}
-    </view>
-  </picker>
-    <!-- 快递类型：<input type="text" bindinput="type" name="adddress" auto-focus /> -->
-    悬赏金额：<input type="text" bindinput="money" name="moeny" value="2元" auto-focus />
-    简要描述：<textarea bindinput="describe" name="describe" auto-focus />
-  </form>
-</modal>
-<view class='zn-uploadimg'>
-<button type='primary' bindtap='getxs' style="margin-top: 20px;">领取悬赏</button>
 </view>
