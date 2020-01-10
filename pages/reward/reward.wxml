@@ -1,7 +1,7 @@
 <!--pages/reward/reward.wxml-->
 <!-- 切换栏 -->
-<view class="swiper-tab">
+<!-- <view class="swiper-tab">
   <block wx:for="{{swipertab}}" wx:key="sptab">
     <view class="swiper-tab-list {{currtab==item.index ?'on':''}}" data-current="{{item.index}}" bindtap="tabSwith">{{item.name}}</view>
   </block>
-</view>
+</view> -->
